@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engagement Invitation - Abdelrahman & Nada</title>
-    <meta name="description" content="Join us to celebrate the engagement of Abdelrahman & Nada - Friday, November 6, 2026 at 7:00 PM.">
+    <meta name="description"
+        content="Join us to celebrate the engagement of Abdelrahman & Nada - Friday, November 6, 2026 at 7:00 PM.">
     <meta property="og:title" content="Engagement Invitation - Abdelrahman & Nada">
     <meta property="og:description" content="We're taking the first step to forever 🤍 Please join us 🤍 - Nov 6, 2026">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./imgs/IMG-20260927-WA0015.jpg">
     <meta name="theme-color" content="#d4af37">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -30,10 +36,11 @@
             align-items: center;
             padding: 30px 15px;
         }
+
         .card {
             background: #ffffff;
             border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             max-width: 750px;
             width: 100%;
             padding: 50px 40px;
@@ -42,10 +49,13 @@
             position: relative;
             overflow: hidden;
         }
+
         .card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 8px;
             background: linear-gradient(90deg, #d4af37, #f3e5ab, #d4af37);
         }
@@ -55,6 +65,7 @@
             line-height: 1;
             margin: 0 auto 15px;
         }
+
         .rings-icon {
             width: 100px;
             height: 100px;
@@ -70,6 +81,7 @@
             color: #8b7355;
             margin-bottom: 15px;
         }
+
         .message {
             font-size: 1.05rem;
             color: #666;
@@ -82,6 +94,7 @@
             font-family: 'Cinzel', serif;
             margin: 25px 0;
         }
+
         .name {
             font-size: 2.8rem;
             font-weight: 700;
@@ -89,6 +102,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
         }
+
         .ampersand {
             font-size: 2rem;
             color: #d4af37;
@@ -105,6 +119,7 @@
             margin: 35px 0 20px;
             text-transform: uppercase;
         }
+
         .photo-gallery {
             display: flex;
             justify-content: center;
@@ -112,6 +127,7 @@
             margin-bottom: 35px;
             flex-wrap: wrap;
         }
+
         .photo-card {
             flex: 1;
             min-width: 280px;
@@ -119,8 +135,9 @@
             padding: 15px;
             border-radius: 18px;
             border: 1px solid #eae0d0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
         }
+
         .photo-card img {
             width: 100%;
             height: 320px;
@@ -128,6 +145,7 @@
             border-radius: 14px;
             background: #eee;
         }
+
         .photo-label {
             margin-top: 12px;
             font-size: 0.9rem;
@@ -145,12 +163,14 @@
             border: 1px dashed #d4af37;
             text-align: center;
         }
+
         .detail-item {
             font-size: 1.1rem;
             margin: 15px 0;
             color: #2c3e50;
             line-height: 1.5;
         }
+
         .detail-item strong {
             color: #8b7355;
             display: block;
@@ -163,6 +183,7 @@
         .venue-photo-container {
             margin: 20px 0 10px;
         }
+
         .venue-photo {
             width: 100%;
             max-height: 250px;
@@ -179,6 +200,7 @@
             color: #888;
             margin-bottom: 15px;
         }
+
         #countdown {
             display: flex;
             justify-content: center;
@@ -186,20 +208,23 @@
             margin-bottom: 35px;
             flex-wrap: wrap;
         }
+
         .time-box {
             background: #1a1a1a;
             color: #fff;
             padding: 12px 18px;
             border-radius: 12px;
             min-width: 80px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .time-box .num {
             font-size: 1.6rem;
             font-weight: 600;
             color: #f3e5ab;
             font-variant-numeric: tabular-nums;
         }
+
         .time-box .label {
             font-size: 0.75rem;
             text-transform: uppercase;
@@ -223,10 +248,12 @@
             transition: all 0.3s ease;
             width: 100%;
         }
+
         .btn-location:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
         }
+
         .footer-text {
             margin-top: 30px;
             font-size: 0.95rem;
@@ -252,23 +279,27 @@
             .card {
                 padding: 35px 20px;
             }
+
             .name {
                 font-size: 2.2rem;
             }
+
             .time-box {
                 min-width: 65px;
                 padding: 10px;
             }
+
             .photo-card img {
                 height: 250px;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <audio id="bgMusic" loop preload="auto">
-        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=wedding-piano-112621.mp3" type="audio/mpeg">
+    <audio id="bgMusic" loop preload="auto" autoplay>
+        <source src="./liela.mp3" type="audio/mpeg">
         Your browser does not support background audio.
     </audio>
 
@@ -289,11 +320,13 @@
         <div class="gallery-title">✨ Our Journey ✨</div>
         <div class="photo-gallery">
             <div class="photo-card">
-                <img src="./imgs/IMG-20260927-WA0014.jpg" alt="When We Were Young" loading="lazy" decoding="async" width="704" height="1530">
+                <img src="./imgs/IMG-20260927-WA0014.jpg" alt="When We Were Young" loading="lazy" decoding="async"
+                    width="704" height="1530">
                 <div class="photo-label">Then</div>
             </div>
             <div class="photo-card">
-                <img src="./imgs/IMG-20260927-WA0015.jpg" alt="Together Now" loading="lazy" decoding="async" width="960" height="1280">
+                <img src="./imgs/WhatsApp Image 2026-09-27 at 10.58.06 PM.jpeg" alt="Together Now" loading="lazy"
+                    decoding="async" width="960" height="1280">
                 <div class="photo-label">Now</div>
             </div>
         </div>
@@ -310,20 +343,33 @@
             <div class="detail-item">
                 <strong>Venue</strong>
                 Swimming Pool Hall - 6th of October Gardens Complex<br>
-                <span style="font-size: 0.95rem; color: #666;">(El-Hilmeya, Near Tajme3 Bridge)</span>
+                <span style="font-size: 0.95rem; color: #666;">(El-Hilmeya, Near Tagneed Bridge)</span>
             </div>
 
             <div class="venue-photo-container">
-                <img src="./imgs/IMG-20260927-WA0018.jpg" alt="Venue Photo" class="venue-photo" loading="lazy" decoding="async" width="1008" height="756">
+                <img src="./imgs/IMG-20260927-WA0018.jpg" alt="Venue Photo" class="venue-photo" loading="lazy"
+                    decoding="async" width="1008" height="756">
             </div>
         </div>
 
         <div class="timer-title">Counting Down To The Big Day</div>
         <div id="countdown">
-            <div class="time-box"><div class="num" id="days">0</div><div class="label">Days</div></div>
-            <div class="time-box"><div class="num" id="hours">00</div><div class="label">Hours</div></div>
-            <div class="time-box"><div class="num" id="minutes">00</div><div class="label">Mins</div></div>
-            <div class="time-box"><div class="num" id="seconds">00</div><div class="label">Secs</div></div>
+            <div class="time-box">
+                <div class="num" id="days">0</div>
+                <div class="label">Days</div>
+            </div>
+            <div class="time-box">
+                <div class="num" id="hours">00</div>
+                <div class="label">Hours</div>
+            </div>
+            <div class="time-box">
+                <div class="num" id="minutes">00</div>
+                <div class="label">Mins</div>
+            </div>
+            <div class="time-box">
+                <div class="num" id="seconds">00</div>
+                <div class="label">Secs</div>
+            </div>
         </div>
 
         <a href="https://maps.app.goo.gl/yibepWXpMRN4YEhg9?g_st=ac" target="_blank" rel="noopener" class="btn-location">
@@ -334,23 +380,38 @@
     </div>
 
     <script>
-        // Music: browsers block autoplay, so start on first interaction + toggle button
+        // Music: try true autoplay on visit, fall back to first interaction (browsers block sound autoplay)
         const music = document.getElementById("bgMusic");
         const musicBtn = document.getElementById("musicBtn");
         let musicStarted = false;
 
         const startAudio = () => {
             if (musicStarted) return;
-            musicStarted = true;
-            music.play().catch(() => {});
+            music.play().then(() => {
+                musicStarted = true;
+                musicBtn.textContent = '⏸️';
+            }).catch(() => { });
         };
-        document.addEventListener('click', startAudio, { once: true });
-        document.addEventListener('touchstart', startAudio, { once: true });
+        // Attempt immediately + when DOM is ready
+        startAudio();
+        document.addEventListener('DOMContentLoaded', startAudio);
+        // Any interaction unlocks audio on Chrome/Safari/Firefox mobile
+        document.addEventListener('click', startAudio);
+        document.addEventListener('touchstart', startAudio);
+        document.addEventListener('keydown', startAudio);
+        document.addEventListener('scroll', startAudio, { passive: true });
+        music.addEventListener('play', () => {
+            musicStarted = true;
+            musicBtn.textContent = '⏸️';
+        });
+        music.addEventListener('pause', () => {
+            musicBtn.textContent = '🎵';
+        });
 
         musicBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             if (music.paused) {
-                music.play().catch(() => {});
+                music.play().catch(() => { });
                 musicBtn.textContent = '⏸️';
             } else {
                 music.pause();
@@ -386,4 +447,5 @@
         updateCountdown();
     </script>
 </body>
+
 </html>
